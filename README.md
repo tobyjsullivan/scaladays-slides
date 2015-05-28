@@ -2,6 +2,11 @@
 
 Use at your own risk (of being off-brand).
 
+## Prerequisites
+
+* Bower
+* Sass
+
 ## Building
 
 There is a helpful script to setup the bower components and compile the hootsuite theme.
