@@ -3,16 +3,29 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 // Override theme settings (see ../template/settings.scss)
+// Background
+$backgroundColor: #fff;
+
+// Primary/body text
 $mainFont: 'Open Sans', sans-serif;
+$mainFontSize: 20pt;
 $mainColor: #000;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'Open Sans', sans-serif;
 $headingColor: #000;
+$headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
+$headingTextTransform: none;
 $headingTextShadow: none;
-$backgroundColor: #fff;
+$headingFontWeight: bold;
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
 $linkColor: #3b759e;
 $linkColorHover: lighten( $linkColor, 20% );
-$selectionBackgroundColor: #134674;
 
 // Title card theme
 $titleMainColor: #fff;
@@ -29,11 +42,22 @@ $titleHeadingSize: 40pt;
 	.backgrounds {
 		.title-slide {
 			background-image: url('../../images/hootsuite.png');
-			background-size: 250px;
+			background-size: auto 75px;
 			background-repeat: no-repeat;
 			background-position: left bottom;
 		}
+
+		background-image: url('../../images/hootsuite-owl.png');
+		background-size: auto 75px;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+
 	}
+
+	.slides {
+		text-align: left;
+	}
+
 	.title-slide {
 		color: $titleMainColor;
 		background-color: $titleBackgroundColor;
@@ -45,7 +69,6 @@ $titleHeadingSize: 40pt;
 			font-size: $titleHeadingSize;
 			font-weight: bold;
 			letter-spacing: normal;
-			text-transform: none;
 		}
 
 		h2 {
