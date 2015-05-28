@@ -1,0 +1,19 @@
+{
+  "name": "reveal-hs",
+  "version": "1.0.0",
+  "authors": [
+    "Toby Sullivan <toby.sullivan@hootsuite.com>"
+  ],
+  "license": "None",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal.js": "~3.0.0"
+  }
+}
