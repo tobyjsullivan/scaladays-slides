@@ -23,6 +23,11 @@ $headingFontWeight: bold;
 $headingTextShadow: none;
 $heading1TextShadow: $headingTextShadow;
 
+$heading1Size: 2.00em;
+$heading2Size: 1.66em;
+$heading3Size: 1.33em;
+$heading4Size: 1.00em;
+
 // Links and actions
 $linkColor: #3b759e;
 $linkColorHover: lighten( $linkColor, 20% );
@@ -44,13 +49,13 @@ $titleHeadingSize: 40pt;
 			background-image: url('../../images/hootsuite.png');
 			background-size: auto 75px;
 			background-repeat: no-repeat;
-			background-position: 5% 95%;
+			background-position: 95% 95%;
 		}
 
 		background-image: url('../../images/hootsuite-owl.png');
 		background-size: auto 75px;
 		background-repeat: no-repeat;
-		background-position: 5% 95%;
+		background-position: 95% 95%;
 
 	}
 
