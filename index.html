@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Hootsuite Presentation Slides</title>
+    <title>Low-Friction Microservices with Scala and Play</title>
 
     <meta name="author" content="Toby Sullivan">
 
@@ -40,30 +40,80 @@
 
       <div class="slides">
         <section class="title-slide">
-          <h1>Hootsuite Reveal.js Template 2015</h1>
-          <h2>March 2015 Update</h2>
+          <h1>Low-Friction Microservices</h1>
+          <h2 style="color: #ccc">with Scala and Play</h2>
           <p>&nbsp;</p>
           <p>
             <strong>Toby Sullivan</strong><br>
             Lead Engineer, Hootsuite<br>
-            <a href="https://twitter.com/tobyjsullivan">@tobyjsullivan</a>
+            <a style="color: #fff" href="https://twitter.com/tobyjsullivan">@tobyjsullivan</a>
           </p>
         </section>
 
         <section data-markdown>
-# Important content
+# Motivations
 
-This is important stuff.
+* Joined data team ~a year ago
+* Wanted to ship reliable data products
+  * Scalable
+  * Minimal maintenance
+* Play is an accessable first step
+        </section>
 
-* Blah
-* Blah blah
-* Blaaaaah
+        <section data-markdown>
+# What we will cover
+
+* Build a URL shortener
+* A few lines of code for each:
+  * JSON parsing and serialization
+    * Play JSON
+  * Persist data in MySQL
+    * Anorm
+  * Caching
+    * Play Cache
+  * Consuming web services
+    * Play WS
         </section>
 
         <section>
-          <h1>Subtitle</h1>
+          <h1>Setup Play project</h1>
+
+          <p>Create a new project with Typesafe Activator CLI</p>
+          <pre style="font-size: 20pt;"><code lang="bash">activator new url-shortener play-scala</code></pre>
+
+          <p>Add two extra dependencies to build.sbt</p>
+          <pre style="font-size: 20pt;"><code lang="bash">"com.typesafe.play" % "anorm_2.11" % "2.3.9",
+"mysql" % "mysql-connector-java" % "5.1.35"</code></pre>
         </section>
 
+
+        <section>
+          <h1>Demo!</h1>
+          <p class="fragment current-visible">Routes &amp; Controllers</p>
+          <p class="fragment current-visible">Model</p>
+          <p class="fragment current-visible">JSON serialisation</p>
+          <p class="fragment current-visible">JSON parsing</p>
+          <p class="fragment current-visible">Generate hash (naive solution)</p>
+          <p class="fragment current-visible">MySQL persistance</p>
+          <p class="fragment current-visible">Caching</p>
+          <p class="fragment current-visible">Web Services (unique ID)</p>
+        </section>
+
+
+        <section data-markdown>
+# What we have covered
+
+* Build a URL shortener
+* A few lines of code for each:
+  * JSON parsing and serialization
+    * Play JSON
+  * Persist data in MySQL
+    * Anorm
+  * Caching
+    * Play Cache
+  * Consuming web services
+    * Play WS
+        </section>
 
       <div class="slides">
         <section class="title-slide">
@@ -71,13 +121,12 @@ This is important stuff.
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>
-            <strong>Have brand questions?</strong><br>
-            <a href="mailto:brand@hootsuite.com">brand@hootsuite.com</a>
+            <strong>Questions? Feedback?</strong><br>
+            Twitter: @tobyjsullivan
           </p>
           <p>
             <strong>Toby Sullivan</strong><br>
             Lead Engineer, Hootsuite<br>
-            <a href="https://twitter.com/tobyjsullivan">@tobyjsullivan</a>
           </p>
         </section>
 

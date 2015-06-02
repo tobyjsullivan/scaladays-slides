@@ -1,22 +1,4 @@
-# UNOFFICIAL Hootsuite-branded Reveal.js slides
+# Microservices with Scala & Play
 
-Use at your own risk (of being off-brand).
+Slides for my presentation at ScalaDays 2015 in Amsterdam
 
-## Prerequisites
-
-* Bower
-* Sass
-
-## Building
-
-There is a helpful script to setup the bower components and compile the hootsuite theme.
-
-	./build.sh
-
-## Using
-
-Your presentation lives in index.html. View that or edit it based on your needs.
-
-## Learn more
-
-Learn more about reveal.js at http://lab.hakim.se/reveal-js/
