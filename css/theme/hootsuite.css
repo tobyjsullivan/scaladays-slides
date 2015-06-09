@@ -17,7 +17,7 @@
 .reveal .title-slide {
   color: #fff;
   background-color: #00aeef;
-  font-size: 15pt;
+  font-size: 30pt;
   text-align: left; }
   .reveal .title-slide h1 {
     color: #fff;
@@ -26,7 +26,7 @@
     letter-spacing: normal; }
   .reveal .title-slide h2 {
     color: #93e2ff;
-    font-size: 20pt;
+    font-size: 30pt;
     font-weight: bold;
     letter-spacing: normal;
     text-transform: uppercase; }
@@ -42,7 +42,7 @@ body {
 
 .reveal {
   font-family: "Open Sans", sans-serif;
-  font-size: 20pt;
+  font-size: 30pt;
   font-weight: normal;
   color: #000; }
 
