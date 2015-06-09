@@ -8,7 +8,7 @@ $backgroundColor: #fff;
 
 // Primary/body text
 $mainFont: 'Open Sans', sans-serif;
-$mainFontSize: 20pt;
+$mainFontSize: 30pt;
 $mainColor: #000;
 
 // Headings
@@ -66,7 +66,7 @@ $titleHeadingSize: 40pt;
 	.title-slide {
 		color: $titleMainColor;
 		background-color: $titleBackgroundColor;
-		font-size: 15pt;
+		font-size: 30pt;
 		text-align: left;
 
 		h1 {
@@ -78,7 +78,7 @@ $titleHeadingSize: 40pt;
 
 		h2 {
 			color: $titleAlternateColor;
-			font-size: 20pt;
+			font-size: 30pt;
 			font-weight: bold;
 			letter-spacing: normal;
 			text-transform: uppercase;

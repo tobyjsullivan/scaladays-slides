@@ -41,7 +41,7 @@
       <div class="slides">
         <section class="title-slide">
           <h1>Low-Friction Microservices</h1>
-          <h2 style="color: #ccc">with Scala and Play</h2>
+          <h2>with Scala and Play</h2>
           <p>&nbsp;</p>
           <p>
             <strong>Toby Sullivan</strong><br>
@@ -51,13 +51,17 @@
         </section>
 
         <section data-markdown>
-# Motivations
+# Background
 
-* Joined data team ~a year ago
-* Wanted to ship reliable data products
-  * Scalable
-  * Minimal maintenance
-* Play is an accessable first step
+* Wanted to go SOA
+  * Stability, scala &amp; faster iteration
+* Obstacles
+  * Minimal experience with Scala
+  * Can't risk creating more problems
+* Solution
+  * Use Play as stepping stone
+* **This talk**
+  * **Build your first microservice**
         </section>
 
         <section data-markdown>
@@ -66,13 +70,10 @@
 * Build a URL shortener
 * A few lines of code for each:
   * JSON parsing and serialization
-    * Play JSON
   * Persist data in MySQL
     * Anorm
   * Caching
-    * Play Cache
-  * Consuming web services
-    * Play WS
+  * Composing services
         </section>
 
         <section>
@@ -82,52 +83,58 @@
           <pre style="font-size: 20pt;"><code lang="bash">activator new url-shortener play-scala</code></pre>
 
           <p>Add two extra dependencies to build.sbt</p>
-          <pre style="font-size: 20pt;"><code lang="bash">"com.typesafe.play" % "anorm_2.11" % "2.3.9",
+          <pre style="font-size: 20pt;"><code lang="bash">"com.typesafe.play" % "anorm" %% "2.3.9",
 "mysql" % "mysql-connector-java" % "5.1.35"</code></pre>
         </section>
 
 
         <section>
           <h1>Demo!</h1>
-          <p class="fragment current-visible">Routes &amp; Controllers</p>
-          <p class="fragment current-visible">Model</p>
-          <p class="fragment current-visible">JSON serialisation</p>
-          <p class="fragment current-visible">JSON parsing</p>
-          <p class="fragment current-visible">Generate hash (naive solution)</p>
-          <p class="fragment current-visible">MySQL persistance</p>
-          <p class="fragment current-visible">Caching</p>
-          <p class="fragment current-visible">Web Services (unique ID)</p>
+          <ul>
+            <li class="fragment current-visible">Routes &amp; Controllers</li>
+            <li class="fragment current-visible">Model</li>
+            <li class="fragment current-visible">JSON serialisation</li>
+            <li class="fragment current-visible">JSON parsing</li>
+            <li class="fragment current-visible">Generate hash (naive solution)</li>
+            <li class="fragment current-visible">MySQL persistance</li>
+            <li class="fragment current-visible">Caching</li>
+            <li class="fragment current-visible">Web Services (unique ID)</li>
+          </ul>
         </section>
 
 
         <section data-markdown>
 # What we have covered
 
-* Build a URL shortener
+* Built a URL shortener
 * A few lines of code for each:
   * JSON parsing and serialization
-    * Play JSON
   * Persist data in MySQL
     * Anorm
   * Caching
-    * Play Cache
-  * Consuming web services
-    * Play WS
+  * Composing services
+        </section>
+
+
+        <section data-markdown>
+# Further Reading
+
+* Microservices - Martin Fowler
+  * [martinfowler.com](http://martinfowler.com/articles/microservices.html)
+* Building a Restful API Using Play - Saba El-Hilo
+  * [code.hootsuite.com](http://code.hootsuite.com/our-experience-with-building-a-restful-data-api-using-play/)
         </section>
 
       <div class="slides">
         <section class="title-slide">
           <h1>Thank you!</h1>
           <p>&nbsp;</p>
-          <p>&nbsp;</p>
           <p>
             <strong>Questions? Feedback?</strong><br>
             Twitter: @tobyjsullivan
           </p>
-          <p>
-            <strong>Toby Sullivan</strong><br>
-            Lead Engineer, Hootsuite<br>
-          </p>
+          <p>&nbsp;</p>
+          <p><small>Slides: http://tobyjsullivan.github.io/scaladays-slides/</small></p>
         </section>
 
       </div>
